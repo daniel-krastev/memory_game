@@ -348,7 +348,7 @@ public class GameGUI
      */
     private class Board extends JPanel
     {
-        private final static String BACK_FILE = "/memorygame/resources/images/images/back.jpg";
+        private final static String PATH_BACK_FILE = "/memorygame/resources/images/active/back.jpg";
         private final static String PATH_SOUND_FILE = "/memorygame/resources/sounds/button.wav";
         //The game logic used to manipulate the buttons.
         private final PairEngine eng;
@@ -385,7 +385,7 @@ public class GameGUI
                 for(int y = 0; y < c; y++) {
                     String imgFile = "/memorygame/resources/images/active/" + eng.getValueAt(x,y) + ".jpg";
                     final JButton b = new JButton();
-                    b.setIcon(new ImageIcon(getClass().getResource(BACK_FILE)));
+                    b.setIcon(new ImageIcon(getClass().getResource(PATH_BACK_FILE)));
                     b.setPreferredSize(new Dimension(160, 107));
                     b.setName(Integer.toString(x)+Integer.toString(y));
                     b.addActionListener((ActionEvent e) -> {
@@ -461,8 +461,8 @@ public class GameGUI
         {
             firstButton.setName(firstButton.getName().substring(0,2));
             firstButton.setDisabledIcon(null);
-            firstButton.setIcon(new ImageIcon(getClass().getResource(BACK_FILE)));
-            secondButton.setIcon(new ImageIcon(getClass().getResource(BACK_FILE)));
+            firstButton.setIcon(new ImageIcon(getClass().getResource(PATH_BACK_FILE)));
+            secondButton.setIcon(new ImageIcon(getClass().getResource(PATH_BACK_FILE)));
             if(!pauseBox.isSelected()) {
                 firstButton.setEnabled(true);
             }
