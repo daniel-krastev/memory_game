@@ -1,0 +1,22 @@
+		A report about "Photographic Memory Puzzle" game.
+
+	The name of the game window has the same title as the game 
+"Photographic Memory Puzzle".
+	Since I am using images with specific pixel width and height I have chosen not to allow 
+the user to resize the frame. My frame is resized automatically when the game is started or when the 
+difficulty level is changed.
+	I am using two menus with several menu items. I have included JCheckBoxMenuItem and
+and JRadioButtonMenuItem. The first one for pausing the game and using sounds, and the second
+for choosing between different difficulties.
+	The layout managers I have used are BorderLayout for the main window, GridLayout for 
+the button on the board and for the labels.
+	I am using three dialog windows as well, for the Help and About items and another dialog
+pops up when the game finishes. All three of them are modal.
+	I have attached listeners to my components. And for the RadioButtonMenuItem I have 
+attached item listeners, which are triggered when the state of the button is changed.
+	Every button of the board has dynamic modality, they can be selected or they cannot be
+selected at particular time. The pause and sound check boxes also have dynamic modality. When a 
+game has finished and the user do not want to continue playing, they are disabled. 
+	The components I have used are JMenuBar, JMenu, JMenuItem, JCheckBoxMenuItem and
+JRadioButtonMenuItem for the menu bar, also JPanel for the container of the frame, JButton for the 
+cards on the board and JLabel for the counters of the time and attempts. 	
