@@ -8,3 +8,9 @@ The game is developed with BlueJ and the idea behind the project is to a clearly
 between the game logic and the user interface.
 
 For more information about the game and the GUI structure read the Report.txt file.
+
+# Compile and Run
+
+Compile: `javac -d . src/memorygame/*.java && cp -r src/memorygame/resources memorygame`
+Run: `java -cp . memorygame.Main`
+Clean: `rm -r memorygame`
